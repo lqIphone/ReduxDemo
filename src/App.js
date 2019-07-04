@@ -1,24 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import MyView from './component/MyView';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <MyView  title="这是第1个" caption="first"/>
+      <br/>
+      <hr/>
+      <MyView  title="这是第2个" caption="second"/>
+      <br/>
+      <hr/>
+      <MyView  title="这是第3个" caption="third"/>
     </div>
   );
 }
